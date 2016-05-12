@@ -9,14 +9,15 @@ public class Livro {
 	private String titulo;
 	private Idioma idioma;
 	private Editora editora;
-	private String autor;
+	private Autor autor;
 	private LocalDate dataLancamento;
 	private Categoria categoria;
+	private String imagem;
 
 	public Livro() {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
@@ -57,11 +58,11 @@ public class Livro {
 		this.editora = editora;
 	}
 
-	public String getAutor() {
+	public Autor getAutor() {
 		return autor;
 	}
 
-	public void setAutor(String autor) {
+	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
 
@@ -79,6 +80,14 @@ public class Livro {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 
 	@Override
@@ -127,7 +136,7 @@ public class Livro {
 	public enum Categoria {
 		ACAO, AVENTURA, DRAMA, SUSPENSE, INFANTIL
 	}
-	
+
 	public enum Idioma {
 		INGLES, FRANCES, ESPANHOL, ITALIANO, POLONES, PORTUGUES, JAPONES, CHINES
 	}

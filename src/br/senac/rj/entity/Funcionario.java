@@ -1,5 +1,7 @@
 package br.senac.rj.entity;
 
-public class Funcionario {
+public class Funcionario extends Usuario {
 
+	public Funcionario() {
+	}
 }
